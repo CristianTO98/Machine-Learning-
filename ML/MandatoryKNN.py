@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb 20 19:08:40 2023
 
-@author: sergi
-"""
 # =============================================================================
 # MANDATORY KNN HW 2
 # load data
