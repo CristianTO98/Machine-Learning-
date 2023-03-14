@@ -1,0 +1,12 @@
+pyproject.toml
+src/autoscalemaster/__init__.py
+src/autoscalemaster/autoscale.py
+src/autoscalemaster/logger.py
+src/autoscalemaster/prueba.py
+src/autoscalemaster/utils.py
+src/autoscalemaster/worker.py
+src/autoscalermaster.egg-info/PKG-INFO
+src/autoscalermaster.egg-info/SOURCES.txt
+src/autoscalermaster.egg-info/dependency_links.txt
+src/autoscalermaster.egg-info/requires.txt
+src/autoscalermaster.egg-info/top_level.txt

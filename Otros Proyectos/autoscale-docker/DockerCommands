@@ -1,0 +1,6 @@
+docker network create --driver bridge emailservice
+
+docker run --rm --net=host -e REDIS_HOST=127.0.0.1 -e REDIS_PORT=6379 -e LOGTAIL_KEY=1LbjFUTmk7qFs7P1d1U1SZW4
+
+docker run --network emailservice --name email_redis -d -p 6379:6379 redis:7.0.7
+docker run  --network emailservice -e REDIS_HOST=email_redis -e REDIS_PORT=6379 -e LOGTAIL_KEY=1LbjFUTmk7qFs7P1d1U1SZW4 app/worker:1.0.0

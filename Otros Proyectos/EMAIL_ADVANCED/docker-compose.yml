@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+
+
+  myworker:
+    container_name: "worker"
+    build: .
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_DB=0
+    links:
+      - myredis:redis
+    volumes:
+      - ./volumenes/datos:/data
+
+  myredis:
+    container_name: "redis"
+    image: "redis:7.0.7"
+    ports:
+      - "6379:6379"

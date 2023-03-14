@@ -1,0 +1,5 @@
+redis
+httpx
+msgpack
+structlog
+docker

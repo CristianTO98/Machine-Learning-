@@ -1,0 +1,16 @@
+[project]
+name = "autoscalermaster"
+version = "0.0.1"
+dependencies = [
+    "redis",
+    "httpx",
+    "msgpack",
+    "structlog",
+    "docker",
+]
+
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
